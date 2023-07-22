@@ -1,6 +1,4 @@
-package fr.vocaltech.di;
-
-import fr.vocaltech.di.atm.CommandRouter;
+package fr.vocaltech.di.atm;
 
 import java.util.Scanner;
 
