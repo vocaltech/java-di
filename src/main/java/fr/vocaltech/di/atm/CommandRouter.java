@@ -9,7 +9,8 @@ import fr.vocaltech.di.atm.Command.*;
 public class CommandRouter {
     private final Map<String, Command> commands = Collections.emptyMap();
 
-    Result route(String input) {
+    public Result route(String input) {
+        System.out.println("[CommandRouter.route()] Handling " + input);
         return null;
     }
 
