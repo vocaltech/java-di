@@ -1,6 +1,7 @@
 package fr.vocaltech.di.atm;
 
 import java.util.Scanner;
+import fr.vocaltech.di.atm.Command.*;
 
 public class CommandLineAtm {
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class CommandLineAtm {
             if (cmdLine.startsWith("!"))
                 break;
 
-            commandRouter.route(cmdLine);
+            Result cmdRes = commandRouter.route(cmdLine);
 
             System.out.print("# ");
         }
