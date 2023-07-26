@@ -11,10 +11,10 @@ public class CommandRouter {
 
     public Result route(String input) {
         System.out.println("[CommandRouter.route()] Handling " + input);
-        return null;
+        return Result.handled();
     }
 
-    private Result invalidCommand(String input) {
+    public Result invalidCommand(String input) {
         return Result.invalid();
     }
 
