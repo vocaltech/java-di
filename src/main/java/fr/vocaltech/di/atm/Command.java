@@ -34,7 +34,7 @@ public interface Command {
             return new Result(Status.HANDLED);
         }
 
-        Status status() {
+        public Status status() {
             return status;
         }
     }
